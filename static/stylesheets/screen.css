@@ -1,0 +1,55 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
+
+body { line-height: 1; }
+
+ol, ul { list-style: none; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+
+caption, th, td { text-align: left; font-weight: normal; vertical-align: middle; }
+
+q, blockquote { quotes: none; }
+q:before, q:after, blockquote:before, blockquote:after { content: ""; content: none; }
+
+a img { border: none; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary { display: block; }
+
+/* Mixins add left and right arrows, eg. on hyperlinks.
+*/
+body { line-height: 1.6; font-family: Georgia, serif; font-size: 1.1em; color: #222222; background-color: white; margin: 0 auto; }
+
+p { margin: 1em 0; }
+
+h1, h2, h3, h4, h5 { color: #222222; font-weight: lighter; }
+
+h1 { font-size: 1.75em; line-height: 1.25; margin: 0.5em 0; }
+
+h2 { font-size: 1.5em; line-height: 1.333; margin: 0.3333em 0; }
+
+h3 { font-size: 1.25em; line-height: 1.333; margin: 0.3333em 0; }
+
+h4, h5 { font-size: 1.15em; line-height: 1.5; margin: 0.5em 0; }
+
+a { text-decoration: none; color: #f43059; }
+
+a:hover, a:visited:hover { text-decoration: underline; }
+
+em { font-style: italic; }
+
+strong { font-weight: bold; }
+
+.wrap { width: 700px; margin: 0 auto; }
+
+#header { padding: 1em; }
+#header #logo { text-align: right; font-size: 2em; display: block; }
+
+.post_list .post { margin: 2em 0; }
+.post_list .post time { display: block; margin: 1em 0; }
+.post_list .post p.more { text-align: right; }
+.post_list .post p.more a:after { content: '\0020\21e8'; }
+
+.pagination { margin: 0.5em 0; padding: 0.5em 0; border-top: 1px solid #222222; text-align: center; }
+.pagination .position { margin: 0 1em; }
+.pagination .next:after { content: '\0020\21e8'; }
+.pagination .previous:before { content: '\21e6\0020'; }

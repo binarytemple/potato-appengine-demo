@@ -1,0 +1,16 @@
+autoload/*
+dbindexer/*
+django/*
+djangoappengine/*
+djangotoolbox/*
+docutils/*
+
+.gaedata
+*.pyc
+static/.sass-cache/*
+
+# OS generated
+.DS_Store*
+ehthumbs.db
+Icon?
+Thumbs.db

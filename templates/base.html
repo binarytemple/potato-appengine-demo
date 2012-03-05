@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <title>{% block title %}{% endblock %} - Simple AppEngine Blog</title>
+    
+    <link href="{{ STATIC_URL }}stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <link href="{{ STATIC_URL }}stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
+    <!--[if IE]>
+        <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <![endif]-->
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    
+    {% block extra_head %}{% endblock %}
+  </head>
+  
+  <body>
+    <div class="wrap">
+      <div id="header">
+        <a id="logo" href="/">Simple AppEngine Blog</a>
+      </div>
+    
+      <div id="content">
+        {% block content %}{% endblock %}
+      </div>
+    
+      <div id="footer">
+      </div>
+    
+      {% block js %}
+      {% endblock %}
+    </div>
+  </body>
+</html>

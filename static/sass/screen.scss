@@ -1,0 +1,133 @@
+@import "base";
+@import "compass/reset";
+
+
+/*
+ Mixins add left and right arrows, eg. on hyperlinks.
+*/
+@mixin righty {
+  &:after {
+    content: '\0020\21e8';
+  }
+}
+
+@mixin lefty {
+  &:before {
+    content: '\21e6\0020';
+  }
+}
+
+body {
+  line-height: 1.6;
+  font-family: Georgia, serif;
+  font-size: 1.1em;
+  color: $body_font_color;
+  background-color: $body_bg;
+  margin: 0 auto;
+}
+
+p {
+  margin: 1em 0;
+}
+
+h1, h2, h3, h4 , h5 {
+  color: $heading_color;
+  font-weight: lighter;
+}
+
+h1 {
+  font-size: 1.75em;
+  line-height: 1.25;
+  margin: 0.5em 0;
+}
+
+h2 {
+  font-size: 1.5em;
+  line-height: 1.333;
+  margin: 0.3333em 0;
+}
+
+h3 {
+  font-size: 1.25em;
+  line-height: 1.333;
+  margin: 0.3333em 0;
+}
+
+h4, h5 {
+  font-size: 1.15em;
+  line-height: 1.5;
+  margin: 0.5em 0;
+}
+
+a {
+  text-decoration: none;
+  color: $link_color;
+}
+
+a:hover, a:visited:hover {
+  text-decoration: underline;
+}
+
+em {
+  font-style: italic;
+}
+
+strong {
+  font-weight: bold;
+}
+
+.wrap {
+  width: 700px;
+  margin: 0 auto;
+}
+
+#header {
+  padding: 1em;
+  
+  #logo {
+    text-align: right;
+    font-size: 2em;
+    display: block;
+  }
+}
+
+.post_list {
+  
+  .post {
+    margin: 2em 0;
+    
+    time {
+      display: block;
+      margin: 1em 0;
+    }
+    
+    p.more {
+      text-align: right;
+      
+      a {
+        @include righty;
+      }
+    }
+  }
+}
+
+.pagination {
+  margin: 0.5em 0;
+  padding: 0.5em 0;
+  border-top: 1px solid $body_font_color;
+  
+  text-align: center;
+  
+  .position {
+    margin: 0 1em;
+  }
+  
+  .next {
+    @include righty;
+  }
+  
+  .previous {
+    @include lefty;
+  }
+}
+

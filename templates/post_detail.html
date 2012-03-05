@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% load markup %}
+
+{% block title %}{{ post.title }}{% endblock %}
+
+{% block content %}
+
+  <div class="post_detail">
+    
+    <div class="post">
+      <h1>{{ post.title }}</h1>
+
+      
+      {{ post.teaser|restructuredtext }}
+      {{ post.body|restructuredtext }}
+      
+      <p>
+        Posted by <em>{{ post.author.username }}</em> on <time datetime="{{ post.date|date:'Y-m-d' }}">{{ post.date }}</time>
+      </p>
+    </div>
+    
+    <a class="back" href="{% url post_list %}">Back</a>
+    
+  </div>
+{% endblock %}

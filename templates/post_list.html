@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% load markup %}
+
+{% block title %}All Posts{% endblock %}
+
+{% block content %}
+  
+  <div class="post_list">
+    <h1>All Posts</h1>
+    {% for post in posts %}
+      <div class="post">
+        <h2>{{ post.title }}</h2>
+        <time datetime="{{ post.date|date:'Y-m-d' }}">{{ post.date }}</time>
+        {{ post.teaser|restructuredtext }}
+        <p class="more">
+          <a href="{{ post.get_absolute_url }}">Read more</a>
+        </p>
+      </div>
+    {% endfor %}
+    
+  </div>
+  {% include "pagination.html" %}
+{% endblock %}
