@@ -43,6 +43,7 @@ The repository is not complete - I've .gitignored the django apps the project
 depends on (dbindexer, djangononrel, djangoappengine, djangotoolbox, docutils)
 to keep this repository small and easily digestible.
 
+Oh yeah - the front end uses Compass and SASS.
 
 References & Examples Used
 ==========================
