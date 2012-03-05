@@ -1,7 +1,6 @@
 @import "base";
 @import "compass/reset";
 
-
 /*
  Mixins add left and right arrows, eg. on hyperlinks.
 */
@@ -131,3 +130,6 @@ strong {
   }
 }
 
+a.back {
+  @include lefty;
+}

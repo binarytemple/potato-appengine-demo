@@ -1,0 +1,7 @@
+indexes:
+    
+- kind: blog_post
+  properties:
+    - name: slug
+    - name: date
+      direction: desc

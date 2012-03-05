@@ -53,3 +53,5 @@ strong { font-weight: bold; }
 .pagination .position { margin: 0 1em; }
 .pagination .next:after { content: '\0020\21e8'; }
 .pagination .previous:before { content: '\21e6\0020'; }
+
+a.back:before { content: '\21e6\0020'; }
