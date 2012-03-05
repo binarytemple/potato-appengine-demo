@@ -21,8 +21,6 @@ class PostUniquenessTests(TestCase):
     simple blogging app.
     
     """
-    
-    
     @expectedFailure
     def test_slugfield_uniqueness_on_save(self):
         """ In a Django app using an RDBMS, we would expect the save operation
@@ -58,8 +56,6 @@ class ViewTests(TestCase):
     status codes - quickly catches TemplateSyntaxErrors and the like.
     
     """
-    
-    
     def test_list_view(self):
         res = self.client.get(reverse('post_list'))
         self.assertEqual(res.status_code, 200)
